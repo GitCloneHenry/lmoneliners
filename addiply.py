@@ -1,1 +1,1 @@
-[print(a + b, a * b) for a, b in (input().split(' ') for i in [0]*int(input()))]
+[print(a + b, a * b) for a, b in (list(map(int, input().split(' '))) for i in [0]*int(input()))]
