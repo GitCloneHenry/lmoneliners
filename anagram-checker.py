@@ -1,1 +1,1 @@
-[(lambda args : print(f"{args[0]}|{args[1]} = {'ANAGRAM' if sorted(args[0]) == sorted(args[1]) and args[0] != args[1] else 'NOT AN ANAGRAM'}"))(input().split('|')) for i in [0]*int(input())]
+[(lambda args : print(f"{args[0]}|{args[1]} = {['NOT AN ANAGRAM', 'ANAGRAM'][sorted(args[0]) == sorted(args[1]) and args[0] != args[1]]}"))(input().split('|')) for i in [0]*int(input())]
