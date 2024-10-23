@@ -1,0 +1,1 @@
+print('\n'.join('\n'.join() for i in [0]*int(input())))
