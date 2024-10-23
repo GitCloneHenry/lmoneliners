@@ -1,1 +1,1 @@
-print('\n'.join(['SWERVE' if a >= b else 'BRAKE' if a * b >= b else 'SAFE' for a, b in list(map(float, input().split(':')))] for i in [0]*int(input())))
+[(lambda speed, distance : print('SWERVE' if speed >= distance else 'BRAKE' if speed * 5 >= distance else 'SAFE'))(list(map(float, input().split(':')))) for i in [0]*int(input())]
