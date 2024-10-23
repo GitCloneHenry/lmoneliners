@@ -1,0 +1,1 @@
+(rp:=lambda *a:[(print('-'*a[1]+i[0]),rp(i[0],a[1]+1))for i in p if i[1]==a[0]])('None',0,p:=sorted([input().split(',')for i in [0]*int(input())]))
