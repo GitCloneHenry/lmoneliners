@@ -1,0 +1,1 @@
+[(lambda args : print(f"{args[0]}|{args[1]} = {'ANAGRAM' if args[0] == args[1][::-1] else 'NOT AN ANAGRAM'}"))(input().split('|')) for i in [0]*int(input())]
