@@ -1,1 +1,1 @@
-print('\n'.join('SWERVE' if a >= b else 'BRAKE' if a * b >= b else 'SAFE' for a, b in list(map(float, input().split(':'))) for i in [0]*input()))
+print('\n'.join(['SWERVE' if a >= b else 'BRAKE' if a * b >= b else 'SAFE' for a, b in list(map(float, input().split(':')))] for i in [0]*input()))
