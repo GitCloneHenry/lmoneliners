@@ -1,1 +1,1 @@
-[(lambda *args : print('SWERVE' if args[0] >= args[1] else 'BRAKE' if args[0] * 5 >= args[1] else 'SAFE'))(list(map(float, input().split(':')))) for i in range(int(input()))]
+[(lambda args : print('SWERVE' if args[0] >= args[1] else 'BRAKE' if args[0] * 5 >= args[1] else 'SAFE'))(list(map(float, input().split(':')))) for i in range(int(input()))]
