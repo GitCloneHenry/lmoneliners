@@ -1,0 +1,1 @@
+print('\n'.join(a * 2 + b * 4 + c * 4 for a, b, c in (list(map(int, input())) for i in [0]*int(input())))) 
