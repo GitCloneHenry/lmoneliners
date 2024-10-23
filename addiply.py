@@ -1,0 +1,1 @@
+[(lambda args : print(args[0] + args[1], args[0] * args[1]))(list(map(int, input().split(' ')))) for i in [0]*int(input())]
