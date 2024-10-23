@@ -1,0 +1,1 @@
+print('\n'.join(len(letter for letter in input() if letter in 'aeiou') for i in [0]*int(input())))
