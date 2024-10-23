@@ -1,1 +1,1 @@
-print('\n'.join(map(str, ['\n'.join(map(str, sorted((point for point in (list(map(float, input().split(' '))) for j in [0]*int(input()))), key=lambda point : (point[0]**2 + point[1]**2)**0.5))) for i in [0]*int(input())])))
+print('\n'.join(map(str, [f"{point_in_list[0]} {point_in_list[1]}" for point_in_list in(sorted((point for point in (list(map(float, input().split(' '))) for j in [0]*int(input()))), key=lambda point : (point[0]**2 + point[1]**2)**0.5)) for i in [0]*int(input())])))
