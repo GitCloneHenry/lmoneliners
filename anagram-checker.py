@@ -1,1 +1,1 @@
-[print(f"{a}|{b} = {'ANAGRAM' if sorted(a) == sorted(b) and a != b else 'NOT AN ANAGRAM'}") for a, b in (input().split('|') for _ in range(int(input())))]
+[print(f"{a}|{b} = {'ANAGRAM' if sorted(a) == sorted(b) and a != b else 'NOT AN ANAGRAM'}") for a, b in (input().split('|') for i in range(int(input())))]
