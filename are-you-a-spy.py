@@ -1,1 +1,1 @@
-print('\n'.join('You\'re not a secret agent!' if ((lambda str : sum(str[0].count(letter) for letter in str[1]) < len(str[1]))(''.join(map(str, [letter for letter in input().lower() if letter in 'abcdefghijklmnopqrstuvwxyz|'])).split('|'))) else 'That\'s my secret contact!' for i in [0]*int(input())))
+print('\n'.join("You're not a secret agent!" if sum(letter[0].count(letter[1]) for i in letter[1]) < len(str[1]) else 'That\'s my secret contact!' for i in [0]*int(input())) for letter in (''.join(c for c in input().lower() if c.isalpha() or c == '|').split('|')))
