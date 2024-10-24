@@ -1,0 +1,1 @@
+print('\n'.join("{:.1f}".format(40075 + 2 * 3.14159265 * int(input())) for i in [0]*int(input())))
