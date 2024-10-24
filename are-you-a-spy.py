@@ -1,4 +1,3 @@
 for i in [0]*int(input()):
-    print(((
-        sum(a.count(letter) for letter in b) < len(b)) for a, b in ''.join(map(str, [letter for letter in input().lower() if letter in 'abcdefghijklmnopqrstuvwxyz|'])).split('|')))
+    print(((lambda str : sum(str[0].count(letter) for letter in str[1]) < len(str[1]))(''.join(map(str, [letter for letter in input().lower() if letter in 'abcdefghijklmnopqrstuvwxyz|'])).split('|'))))
     # print('You\'re not a secret agent!' if ((sum(a.count(letter) for letter in b) < len(b)) for a, b in '\n'.join(map(str, [letter for letter in input().lower() if letter in 'abcdefghijklmnopqrstuvwxyz'])).split('|')) else 'That\'s my secret contact!')
