@@ -5,5 +5,5 @@ for i in [0]*int(input()):
 
     words = [input() for j in [0]*a]
 
-    compared = [compare_strings(input(), word) for word in words]
-    print('\n'.join(words[compared.index(min(compared))]))
+    compared = [[compare_strings(input(), word) for word in words] for j in [0]*b]
+    print('\n'.join(words[compared[j].index(min(compared[j]))] for j in [0]*b))
