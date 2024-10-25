@@ -1,1 +1,1 @@
-print('\n'.join(max(*(map(int, input().split()))) for i in [0]*int(input())))
+print('\n'.join(str(max(*(map(int, input().split())))) for i in [0]*int(input())))
