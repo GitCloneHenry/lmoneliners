@@ -9,5 +9,5 @@ for i in [0]*int(input()):
 
     for j in [0]*b:
         wrong_word = input()
-        compared.push([compare_strings(wrong_word, word) for word in words])
+        compared.append([compare_strings(wrong_word, word) for word in words])
     print('\n'.join(words[compared[j].index(min(compared[j]))] for j in [0]*b))
