@@ -1,1 +1,1 @@
-print('\n'.join(['false', 'true'][c - a <= b * 5] for a, b, c in (list(map(int, input().split())) for i in [0]*int(input()))))
+print('\n'.join(['false', 'true'][c - min(c // 5, b) * 5 <= a] for a, b, c in (list(map(int, input().split())) for i in [0]*int(input()))))
