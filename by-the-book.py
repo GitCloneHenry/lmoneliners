@@ -1,2 +1,2 @@
-test = lambda: sum(a * 10 if b == 'X' else a * int(b) for a, b in enumerate(input().split()))
+test = lambda: sum(a * b for a, b in [{'X': 10}.get(char, int(char)) for char in input()])
 print('\n'.join(test() for i in [0]*int(input())))
