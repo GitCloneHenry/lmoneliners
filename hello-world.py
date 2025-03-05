@@ -1,1 +1,1 @@
-print('\n'.join(input() for i in [0]*int(input())))
+[print(input()) for i in [0]*int(input())]
